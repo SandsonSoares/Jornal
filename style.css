@@ -1,0 +1,248 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;400;600;800&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Dosis:wght@200;300;400;500;700&family=Staatliches&display=swap');
+/*
+    font-family: 'Anek Malayalam', sans-serif; Corpo
+    font-family: 'Anonymous Pro', monospace; Destaque 
+    font-family: 'Dosis', sans-serif; Corpo
+    font-family: 'Staatliches', cursive; Manchete
+*/
+:root{
+    --corPrincipal: #F01100;
+    --corEscura: #702722;
+    --corFonteClara: #F57F77;
+}
+*{
+    margin: 0;
+    padding: 0;
+} 
+html{
+    position: relative; 
+
+}
+
+/* CONFIIG FOOTER */
+
+.rodape{
+    clear: both;
+    background-color: #702722;
+    position: absolute;
+    bottom: -10vh;
+    width: 100%;
+    height: 50px;
+
+}
+.rodape p {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.rodape a {
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.rodape a:hover{
+    color: #F57F77;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+}
+/*Top config*/
+#topo{
+    height: 15vh;   
+    width: 100%;
+    position: relative;
+}
+
+#faixa{
+    background-color: #F01100;
+    position: absolute;
+    top:5vh;
+    height: 50px;
+    width: 100%;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.407);
+}
+#menu{
+    margin: 1.5vh auto;
+    max-width: 375px;
+    min-width: 280px;
+}
+#menu > li{
+    display: inline-block;
+    margin-left: 50px;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 1em;
+    color: white;
+    transition: ease-in-out .2s;
+}
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+#menu li:hover{
+    padding-bottom: 5px;
+    border-bottom: 5px solid white;
+}
+#logo{
+    position: absolute;
+    top: -3vh;
+    left: 10vh;
+    outline: 5px solid white;
+    width: 150px;
+    height: 100px;
+
+}
+@media only screen and (max-width: 790px) {
+    #logo{
+        display: none;
+    }
+}
+
+/* CONFIG MAIN */
+
+.corpo{
+    margin: 15px auto; 
+    max-width: 1500px;
+    min-width: 280px;
+}
+.grade{
+    display: block;
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 20px 40px 20px 40px;
+}
+.conteudo{
+    display: inline-flex;
+    width: 300px;
+    margin: 13px 10px;
+    height: 300px;
+    margin-bottom: 50px; 
+}
+.conteudo ul {
+    list-style: none;
+}
+.topside{
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    border-radius: 5px;
+}
+.side{
+    text-decoration: none;
+    color: black;
+}
+.conteudo p {
+    padding: 5px;
+    text-align: justify;
+}
+.conteudo h3{
+    background-color: whitesmoke;
+    color: #702722;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Staatliches', cursive; 
+}
+.conteudo:hover h3{
+    color: #F01100;
+}
+.conteudo:hover P{
+    opacity: .6;
+}
+
+/*CONGIF CONTEUDO LATERAL*/
+
+.lateral{
+    display: block;
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+
+}
+.votar{
+    min-width: 250px;
+    max-width: 430px;
+
+    margin: 5vh 40px;
+
+}
+.votar a {
+    text-decoration: none;
+    color: black;
+}
+
+.votar ul {
+    list-style: none;
+}
+#frame > li{
+    position: relative;
+    text-align: justify;
+    min-width: 150px;
+    max-width: 260px;
+    padding: 5px;
+}
+
+.jpeg{
+    margin: 0;
+    width: 100%;
+    min-height: 80px;
+    max-height: 150px;
+    border-radius: 5px;
+}
+#frame h4{
+    position: absolute;
+    top: 40%;
+    left: 70px;
+    font-size: 2em;
+    color: white;
+    font-family: 'Staatliches', cursive; 
+}
+#frame:hover h4{
+    color: #F57F77;
+}
+#frame:hover p {
+    opacity: .6;
+}
+.extra{
+    min-width: 150px;
+    max-width: 260px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 10px;
+}
+.extra > figcaption{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.extra a {
+    text-decoration: none;
+    color: white;
+}
+.extra:hover figcaption{
+    color: #F57F77;
+}
+@media only screen and (max-width: 1000px){
+    .grade{
+        float: none;
+        width: 100%;
+    }
+    .lateral{
+        float: none;
+    }
+    .conteudo{
+        margin-bottom: 70px;
+    }
+}
+
+/* PAGINA LATERAL1  */
+
